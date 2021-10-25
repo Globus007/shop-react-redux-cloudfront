@@ -15,8 +15,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PageProductImport() {
   const classes = useStyles();
+  localStorage.setItem('authorization_token', 'Z2xvYnVzMDA3OlRFU1RfUEFTU1dPUkQ=');
 
-  return (
+    return (
     <div className={classes.content}>
       <Box display="flex" alignItems="center">
         <CSVFileImport url={`${API_PATHS.import}/import`} title="Import Products CSV"/>
